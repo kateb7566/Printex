@@ -1,0 +1,101 @@
+﻿<UserControl x:Class="PrintexV.PayerAn"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PrintexV"
+             mc:Ignorable="d"         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+             d:DesignHeight="450" d:DesignWidth="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="50" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="30" />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="40" />
+            <RowDefinition />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Name="ErrMsg" Text="" Grid.Column="1" Grid.Row="1" FontSize="16" Foreground="Red" HorizontalAlignment="Center" />
+
+        <TextBox Name="Nom" Grid.Row="2" Height="45" Grid.Column="1" Width="300" Focusable="True" ToolTip="Veuillez entrer le nom d'etudiant"
+                         Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
+                      Foreground="#212121" FontSize="20" Margin="10" >
+            <materialDesign:HintAssist.Hint>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="Nom" Margin="0 0 0 0" />
+                </StackPanel>
+            </materialDesign:HintAssist.Hint>
+        </TextBox>
+
+        <TextBox Name="Prena" Grid.Row="3" Height="45" Grid.Column="1" Width="300" ToolTip="Veuillez entrer le prenom d'etudiant"
+                         Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
+                      Foreground="#212121" FontSize="20" Margin="10" >
+            <materialDesign:HintAssist.Hint>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="Prenom" Margin="0" />
+                </StackPanel>
+            </materialDesign:HintAssist.Hint>
+        </TextBox>
+
+        <Label Name="LabelNiv" Grid.Column="1" Grid.Row="4" Height="30" FontSize="16" Foreground="#757575" Content="Niveau" VerticalAlignment="Top" 
+               Width="300" Margin="5 15 0 0"
+               HorizontalAlignment="Center" />
+        <ComboBox Name="nueva" Grid.Row="4" Grid.Column="1" Height="35" Width="300" Foreground="#212121" ToolTip="Le niveau d'etudiant"
+                  FontSize="16" VerticalAlignment="Bottom" Margin="10 15 10 5" >
+            <!-- Creche -->
+            <ComboBoxItem Content="Crèche 3" />
+            <ComboBoxItem Content="Crèche 4" />
+            <ComboBoxItem Content="Crèche 5" />
+            <!-- Primaire -->
+            <ComboBoxItem Content="Prim 1" />
+            <ComboBoxItem Content="Prim 2" />
+            <ComboBoxItem Content="Prim 3" />
+            <ComboBoxItem Content="Prim 4" />
+            <ComboBoxItem Content="Prim 5" />
+
+            <!-- Cem -->
+            <ComboBoxItem Content="Cem 1" />
+            <ComboBoxItem Content="Cem 2" />
+            <ComboBoxItem Content="Cem 3" />
+            <ComboBoxItem Content="Cem 4" />
+
+            <!-- Lycee -->
+            <ComboBoxItem Content="Lyc 1" />
+            <ComboBoxItem Content="Lyc 2" />
+            <ComboBoxItem Content="Bac" />
+        </ComboBox>
+
+        <Grid Grid.Row="6" Grid.Column="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition Width="70" />
+            </Grid.ColumnDefinitions>
+            <Button Name="CreatePdf" Grid.Column="2" Grid.Row="6" Style="{StaticResource MaterialDesignRaisedButton}" Width="120" Height="35" 
+                    HorizontalAlignment="Center" ToolTip="Imprimer le bon du paiement"
+               Background="#009688" BorderBrush="#009688" Click="CreatePdf_Click"  >
+                print
+            </Button>
+            <Button Name="CancelB" Grid.Column="1" Grid.Row="6" Background="LightGray" BorderBrush="LightGray" Foreground="#212121" ToolTip="Réinitialiser le formulaire"
+                Style="{StaticResource MaterialDesignToolButton}" Width="120" Height="35" HorizontalAlignment="Center" Click="CancelB_Click" >
+                Reset
+            </Button>
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,34 @@
+﻿<Window x:Class="PrintexV.AboutSoft"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrintexV"
+        mc:Ignorable="d" ResizeMode="NoResize"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" BorderBrush="#ebebeb"
+        TextOptions.TextRenderingMode="Auto" WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="Printex - About Software" Height="280" Width="500">
+    <Grid Background="White" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="40" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1" Grid.Row="1" Text=" Printex est un software qui a pour objectif de rendre l'impression&#10; des bons de paiement plus facile et bien automatisée, comme on&#10; peut voire aussi qu'il s'agit de faire que l'enregistrement des&#10; données devienne plus facile et bien organisé.&#10; Ce logiciel a été créée par Fateh Kateb.&#10; Les droits 2018 sont reservées."
+                   FontFamily="Roboto" FontSize="14" Foreground="#212121" FontWeight="Light" VerticalAlignment="Center" HorizontalAlignment="Center" LineHeight="8" />
+        <Button Name="InfOk" Grid.Column="1" Grid.Row="2" Background="#ebebeb" BorderBrush="#ebebeb" Style="{StaticResource MaterialDesignRaisedButton}" Foreground="#212121"
+                Content="Ok" Width="120" Click="InfOk_Click" />
+    </Grid>
+</Window>

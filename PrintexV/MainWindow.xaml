@@ -1,0 +1,59 @@
+﻿<Window x:Class="PrintexV.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrintexV"
+        xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
+        mc:Ignorable="d" ResizeMode="CanMinimize"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" BorderBrush="#009688"
+        TextOptions.TextRenderingMode="Auto" WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="Printex - Imprimer des bons avec toute facilité !" Height="670" Width="550">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" Margin="10 0 0 0" >
+            <MenuItem Header="_File" >
+                <MenuItem Name="CreateExcel" Header="_Create a new Excel File" Click="CreateExcel_Click" />
+                <MenuItem Name="Opena" Header="_Ouvrir le fichier Excel" Click="Opena_Click" />
+                <MenuItem Name="Vider" Header="_Vider Printex" Click="Vider_Click" />
+                <MenuItem Name="Clerck" Header="_Changer le compte" Click="Clerck_Click" />
+                <Separator Margin="20,0,10,0" Height="13" />
+                <MenuItem Name="Closa" Header="F_ermer" Click="Closa_Click" />
+            </MenuItem>
+            <MenuItem Header="_?" >
+                <MenuItem Name="SoftInfo" Header="_About Software" Click="SoftInfo_Click" />
+                <Separator Margin="20, 0, 10, 0" />
+                <MenuItem Name="Kateb" Header="About Us" Click="Kateb_Click" />
+            </MenuItem>
+        </Menu>
+        <Grid DockPanel.Dock="Bottom" >
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="35" />
+            </Grid.RowDefinitions>
+            <Grid Name="Form" Grid.Row="0" >
+                <dragablz:TabablzControl BorderThickness="0 1 0 0" BorderBrush="#009688" >
+                    <dragablz:TabablzControl.InterTabController>
+                        <dragablz:InterTabController />
+                    </dragablz:TabablzControl.InterTabController>
+                    <TabItem Name="frota" Header="Frais du Mois" IsSelected="True" >
+                        <local:PayerMois />
+                    </TabItem>
+                    <TabItem Name="frika" Header="Frais d'inscription">
+                        <local:PayerAn />
+                    </TabItem>
+                </dragablz:TabablzControl>
+            </Grid>
+            <!--<Button Name="switch" Grid.Row="1" Style="{StaticResource MaterialDesignFloatingActionAccentButton}" Height="50" Width="50" Background="#FF5252" 
+                    BorderBrush="#FF5252" 
+                    Click="switch_Click" ToolTip="Switch Users"  >
+                <materialDesign:PackIcon Kind="SwapHorizontal" Foreground="#EEE" Height="30" Width="30" />
+            </Button>-->
+        </Grid>
+    </DockPanel>
+</Window>
