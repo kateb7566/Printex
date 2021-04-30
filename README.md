@@ -1,4 +1,5 @@
 <h1>Printex - Imprimer des bons avec toute Facilité</h1>
+
 <p>Printex is an easy to use app for printing private school bills.</p>
 
 <h3>Features</h3>
@@ -21,12 +22,12 @@ Printex is designed according to the Material Design Guidelines.
 
 Printex was coded using the following libraries:
 <ul>
-	<li>Dragablz - Dragable and tearable tab control for WPF</li><br>
-	<li>Material Design Colors - ResourceDictionary instances containing standard Google Material Design swatches, for inclusion in a XAML application.</li><br>
-	<li>Material Design Themes - ResourceDictionary instances containing Material Design templates and styles for WPF controls.</li><br>
-	<li>FreeSpire.office - for I/O operations on MS Excell Files.</li><br>
-	<li>PdfSharp - PDFsharp is the Open Source .NET library that easily creates and processes PDF documents on the fly from any .NET language.</li><br>
-	<li>Spire.PDFViewer - Spire.PDFViewer is an easy-to-use and reliable .NET PDF Viewer component.</li><br>
+	<li>[Dragablz](https://github.com/ButchersBoy/Dragablz) - Dragable and tearable tab control for WPF</li><br>
+	<li>[Material Design Colors](https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit) - ResourceDictionary instances containing standard Google Material Design swatches, for inclusion in a XAML application.</li><br>
+	<li>[Material Design Themes](https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit) - ResourceDictionary instances containing Material Design templates and styles for WPF controls.</li><br>
+	<li>[FreeSpire.office](https://www.nuget.org/packages/FreeSpire.Office/) - for I/O operations on MS Excell Files.</li><br>
+	<li>[PdfSharp](http://www.pdfsharp.net/?AspxAutoDetectCookieSupport=1) - PDFsharp is the Open Source .NET library that easily creates and processes PDF documents on the fly from any .NET language.</li><br>
+	<li>[Spire.PDFViewer](https://www.e-iceblue.com/Introduce/pdf-viewer.html) - Spire.PDFViewer is an easy-to-use and reliable .NET PDF Viewer component.</li><br>
 </ul>
 
 <h3>Contact</h3>
