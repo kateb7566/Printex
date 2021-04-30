@@ -29,7 +29,9 @@ Printex was coded using the following libraries:
 	<li>Spire.PDFViewer - Spire.PDFViewer is an easy-to-use and reliable .NET PDF Viewer component.</li><br>
 </ul>
 
-<h3>ScreenShots</h3>
-![Uploading Printex 1.PNG…]()
+<h3>Contact</h3>
+
+* You can reach out by email : muhamet7138@gmail.com
+* You can check out [my blog](https://codekateb.blogspot.com/) for more Tech articles !
 
 
