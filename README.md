@@ -4,7 +4,7 @@
 
 <h3>Features</h3>
 <ul>
-	<li>The app can be used only by Windows Users.</li><br>
+	<li>The app can be used only by Windows Users and requires at least .NET 4.5 to run.</li><br>
 	<li>The app creates a folder, named Printex</li><br>
 	<li>The bill can be printed from a pdf format file.</li><br>
 	<li>Printex saves the bill in a pdf File that is created within a folder in Documents named Printex.</li><br>
