@@ -20,7 +20,7 @@ Printex is designed according to the [Material Design Guidelines](https://materi
 
 </h3>
 
-Printex was coded using the following Packages: 
+Printex was coded using the following packages: 
 
 * [Dragablz](https://github.com/ButchersBoy/Dragablz/) - Dragable and tearable tab control for WPF
 * [Material Design Colors](https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit) - ResourceDictionary instances containing standard Google Material Design swatches, for inclusion in a XAML application.
